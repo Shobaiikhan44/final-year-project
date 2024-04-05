@@ -1,0 +1,36 @@
+/* Add your CSS styles here */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+button {
+    background-color: #007acc; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* Remove button border */
+    padding: 10px 20px; /* Add padding for better appearance */
+    margin: 5px; /* Optional margin between buttons */
+    cursor: pointer; /* Add pointer cursor on hover */
+    font-size: 14px; /* Font size */
+    border-radius: 4px; /* Rounded corners */
+}
+
+/* Style the Clear Suggestions button differently */
+#clearSuggestionsButton {
+    background-color: #e74c3c; /* Red background color for Clear Suggestions button */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker background color on hover */
+}
+
+#suggestions {
+    margin-top: 20px;
+}
+
+

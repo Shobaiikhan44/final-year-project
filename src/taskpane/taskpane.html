@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contoso Task Pane Add-in</title>
+
+    
+    <script type="text/javascript" src="https://appsforoffice.microsoft.com/lib/1.1/hosted/office.js"></script>
+
+     
+    <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css"/>
+
+    
+    <link href="taskpane.css" rel="stylesheet" type="text/css" />
+
+
+</head>
+<body>
+    <h1>Grammar Checker Add-in</h1>
+
+    
+    <button id="checkGrammarButton">Check Grammar</button>
+    
+    <button id="clearSuggestionsButton" style="display: none;">Clear Suggestions</button>
+
+
+    
+    <!-- <div>
+        <label for="specialPattern">Add Special Pattern: </label>
+        <input type="text" id="specialPattern" />
+        <button onclick="addSpecialPattern()">Add</button>
+    </div>
+
+    <div>
+        <label for="specialTerm">Add Special Term: </label>
+        <input type="text" id="specialTerm" />
+        <button onclick="addSpecialTerm()">Add</button>
+    </div> -->
+
+    
+    <button id="checkParaphraseButton">Check and Paraphrase Text</button>
+    
+    <hr>
+    <h3><u> Special Patterns </u></h3>
+
+    <label for="patternInput"><b>Add Special Pattern:</b></label>
+    <input type="text" id="patternInput">
+    <button id="addSpecialPatternButton">Add</button>
+    <!-- <button onclick="addSpecialPattern()">Add</button> -->
+
+    <h4>Special Patterns are:</h4>
+    <ul id="specialPatternsList"></ul>
+    <hr>
+    
+    <div id="suggestions"></div>
+    
+    
+    <button id="insertCorrectedTextButton" style="display: none;">Insert Corrected Text</button>
+
+
+    <!-- <button id="addSpecialPatternButton">Add Special Pattern</button>
+    <ul id="specialPatterns"></ul> -->
+
+
+
+    
+
+    
+    
+    
+
+    <!-- <script>
+        const specialPatterns = [];
+
+        function addSpecialPattern() {
+            const patternInput = document.getElementById("patternInput");
+            const pattern = patternInput.value.trim();
+
+            if (pattern !== "") {
+                specialPatterns.push(pattern);
+                patternInput.value = "";
+                displaySpecialPatterns();
+            }
+        }
+
+        function displaySpecialPatterns() {
+            const specialPatternsList = document.getElementById("specialPatternsList");
+            specialPatternsList.innerHTML = "";
+
+            specialPatterns.forEach((pattern) => {
+                const listItem = document.createElement("li");
+                listItem.textContent = pattern;
+                specialPatternsList.appendChild(listItem);
+            });
+        }
+    </script> -->
+
+    <script type="text/javascript" src="taskpane.js"></script>
+</body>
+</html>
